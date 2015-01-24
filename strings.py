@@ -25,6 +25,7 @@ if __name__ == '__main__':
             (r"/wrap", WrapHandler)
     ])
     '''
+    Regex tells Tornado to match any path beginning with string /reverse followed by 1 or more alphanumeric characters
 
     '''
     http_server = tornado.httpserver.HTTPServer(app)

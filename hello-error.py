@@ -11,6 +11,9 @@ class IndexHandler(tornado.web.RequestHandler):
         greeting = self.get_argument('greet', 'Hello')
         self.write(greeting + ', cool user!')
     def write_error(self, status_code, **kwargs):
+        '''
+        Overwrite error message
+        '''
         self.write("You caused a %d error." % status_code)
 
 if __name__ == '__main__':
