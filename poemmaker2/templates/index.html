@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- static_url function to generate URLs -->
+    <link rel="stylesheet" href = "{{ static_url("style.css") }}">
+    <title>Alpha Munger</title>
+</head>
+<body>
+    <h1>Alpha Munger</h1>
+    <p>
+        Enter 2 texts below, the replacement text will have its words
+        replaced by words beginning with the same letter in source text.
+    </p>
+    <form method = "post" action ="/poem">
+        <p>Source text<br>
+            <textarea rows=4 cols=55 name="source"></textarea>
+        </p>
+        <p>Text for Replacement<br>
+            <textarea rows=4 cols=55 name="change"></textarea>
+        </p>
+        <input type = "submit">
+    </form>
+</body>
+</html>
